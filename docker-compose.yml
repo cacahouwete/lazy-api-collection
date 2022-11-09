@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      dockerfile: docker/Dockerfile
+      context: .
+      target: test
+
+  audit:
+    image: cacahouete/phpaudit
+    volumes:
+      - .:/project

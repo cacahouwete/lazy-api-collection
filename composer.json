@@ -1,0 +1,49 @@
+{
+  "name": "cacahouwete/lazy-api-collection",
+  "license": "MIT",
+  "description": "Handle rest api endpoint with pagination through an unique iterable",
+  "type": "library",
+  "keywords": ["API", "Collection"],
+  "authors": [
+    {
+      "name": "Alexandre Vinet",
+      "email": "contact@alexandrevinet.fr"
+    }
+  ],
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "phpspec/prophecy-phpunit": "^2.0",
+    "phpunit/phpunit": "^9.5",
+    "symfony/thanks": "^1",
+    "symfony/framework-bundle": "^5.4 | ^6",
+    "symfony/http-client": "^5.4 | ^6",
+    "symfony/serializer": "^5.4 | ^6"
+  },
+  "suggest": {
+    "symfony/framework-bundle": "^5.4 | ^6",
+    "symfony/http-client": "^5.4 | ^6",
+    "symfony/serializer": "^5.4 | ^6"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true,
+    "allow-plugins": {
+      "symfony/thanks": true
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "LazyApiCollection\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\LazyApiCollection\\": "tests/"
+    }
+  }
+}
