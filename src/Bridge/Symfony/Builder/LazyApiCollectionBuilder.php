@@ -10,6 +10,11 @@ use Symfony\Component\Serializer\SerializerInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 use Symfony\Contracts\HttpClient\ResponseInterface;
 
+/**
+ * @psalm-template T
+ *
+ * @template-implements LazyApiCollectionBuilderInterface<T>
+ */
 final class LazyApiCollectionBuilder implements LazyApiCollectionBuilderInterface
 {
     private HttpClientInterface $httpClient;

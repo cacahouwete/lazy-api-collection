@@ -7,7 +7,9 @@ namespace LazyApiCollection\Model;
 use UnexpectedValueException;
 
 /**
- * @template-implements  \Iterator<object>
+ * @psalm-template T
+ *
+ * @template-implements \Iterator<T>
  */
 final class LazyApiCollection implements \Iterator, \Countable
 {
